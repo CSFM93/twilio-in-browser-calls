@@ -1,0 +1,85 @@
+/* HOME PAGE */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+div#output-selection {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+.log-container {
+    height: 350px;
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+div#log {
+    padding-top: 20px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    width: 95%;
+    height: 9.5em;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.btn-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-circle {
+    border: 1px solid rgba(0, 0, 0, .125);
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.keypad {
+    margin-left: auto;
+}
+
+.btn-outline-secondary {
+    height: 70px;
+    width: 75px;
+}
+
+input {
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    font-size: x-large;
+}
+
+
+ /* MODAL CALL IN PROGRESS */
+
+#callDuration {
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+#div-call-in-progress {
+    margin-left: 40px;
+}
+
+#modal-call-in-progress-body {
+    background-image: url('/static/images/user.png');
+    background-size: cover;
+}
