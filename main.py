@@ -31,7 +31,7 @@ def home():
 
 @app.route('/token', methods=['GET'])
 def get_token():
-    identity = 'client'
+    identity = twilio_number
     outgoing_application_sid = twiml_app_sid
 
     access_token = AccessToken(account_sid, api_key,
@@ -63,7 +63,7 @@ def call():
         print('incoming call')
         caller = request.form['Caller']
         dial = Dial(callerId=caller)
-        dial.client('client')
+        dial.client(twilio_number)
 
     return str(response.append(dial))
 

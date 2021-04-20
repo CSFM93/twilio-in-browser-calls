@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     //////////////          DIAL MODAL         ///////////////////////////////
 
 
@@ -12,11 +12,11 @@ $(document).ready(function() {
     })
 
 
-    $('#btnCloseDialModal').bind('click', function() {
+    $('#btnCloseDialModal').bind('click', function () {
         $('#modal-dial').modal('hide')
     });
 
-    $('.btnNumber').bind('click', function() {
+    $('.btnNumber').bind('click', function () {
         let text = $(this).text()
         inputPhoneNumber.value += text
     });
@@ -35,7 +35,7 @@ $(document).ready(function() {
     ///////////////       CALL IN PROGRESS MODAL          ////////////////////////////
 
 
-    $("#modal-call-in-progress").on('shown.bs.modal', function() {
+    $("#modal-call-in-progress").on('shown.bs.modal', function () {
         showCallDuration()
     });
 
@@ -58,8 +58,8 @@ $(document).ready(function() {
             }
             if (min === 60) {
                 ms,
-                sec,
-                min = 0;
+                    sec,
+                    min = 0;
             }
 
             let milli = ms < 10 ? `0` + ms : ms;
@@ -79,7 +79,7 @@ $(document).ready(function() {
         function stop() {
             clearInterval(time)
         }
-
+        
         //reset timer
         function reset() {
             ms = 0;
@@ -92,7 +92,7 @@ $(document).ready(function() {
         // start the timer
         start()
 
-        $("#modal-call-in-progress").on('hidden.bs.modal', function() {
+        $("#modal-call-in-progress").on('hidden.bs.modal', function () {
             stop()
         });
 
